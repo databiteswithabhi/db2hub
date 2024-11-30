@@ -19,19 +19,19 @@ export default function LandingPage() {
       <Column lg={16} md={8} sm={4} className="landing-page__banner">
         <Breadcrumb noTrailingSlash aria-label="Page navigation">
           <BreadcrumbItem>
-            <a href="/">Getting started</a>
+            <a href="https://cloud.ibm.com/catalog/services/db2">IBM DB2 on Cloud</a>
           </BreadcrumbItem>
         </Breadcrumb>
         <h1 className="landing-page__heading">
-          Design &amp; build with Carbon
+        Data, Analytics, and Innovation: Welcome to DB2 Hub
         </h1>
       </Column>
       <Column lg={16} md={8} sm={4} className="landing-page__r2">
         <Tabs defaultSelectedIndex={0}>
           <TabList className="tabs-group" aria-label="Tab navigation">
             <Tab>About</Tab>
-            <Tab>Design</Tab>
-            <Tab>Develop</Tab>
+            <Tab>DB2 Resources</Tab>
+            <Tab>Cloud & AI</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
@@ -42,15 +42,13 @@ export default function LandingPage() {
                   sm={4}
                   className="landing-page__tab-content"
                 >
-                  <h3 className="landing-page__subheading">What is Carbon?</h3>
+                  <h3 className="landing-page__subheading">What is DB2 Hub?</h3>
                   <p className="landing-page__p">
-                    Carbon is IBM’s open-source design system for digital
-                    products and experiences. With the IBM Design Language as
-                    its foundation, the system consists of working code, design
-                    tools and resources, human interface guidelines, and a
-                    vibrant community of contributors.
+                  DB2Hub is a portal providing the latest updates on IBM DB2, ETL pipelines, Watson, and cloud services like AWS, GCP, and Azure. Recognized by IBM Marketing between 2012-2016, DB2Hub is now returning with fresh insights on cloud, AI, and data.
+
+Please note, DB2Hub is an independent resource and has no direct affiliation with IBM offerings. For broader tech insights, visit Data Bites.
                   </p>
-                  <Button>Learn more</Button>
+                  <Button href='https://databites.dev/'>Data Bites</Button>
                 </Column>
                 <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
                   <Image
@@ -73,8 +71,7 @@ export default function LandingPage() {
                   className="landing-page__tab-content"
                 >
                   <p className="landing-page__p">
-                    Rapidly build beautiful and accessible experiences. The
-                    Carbon kit contains all resources you need to get started.
+                  IBM® Db2® is a cloud-native database designed for low-latency transactions, real-time analytics, and AI applications. It ensures continuous availability and zero downtime during hybrid cloud migrations. With support for modern data types, workloads, and languages, it simplifies development. It also accelerates decision-making by enabling secure data sharing with open formats like Apache Iceberg. Additionally, it supports AI deployment at scale with built-in machine learning and IBM watsonx™ integration for generative AI.
                   </p>
                 </Column>
               </Grid>
@@ -88,8 +85,9 @@ export default function LandingPage() {
                   className="landing-page__tab-content"
                 >
                   <p className="landing-page__p">
-                    Carbon provides styles and components in Vanilla, React,
-                    Angular, and Vue for anyone building on the web.
+                  The Db2 Hub Portal offers a wealth of resources on cloud, AI, data science, and machine learning. It features tutorials, articles, and quizzes covering topics such as AWS, Google Cloud, Azure, and IBM watsonx for developing AI applications, managing data pipelines, and automating workflows. Users can access content on SQL, system design, and building chatbots with tools like IBM Watson Assistant. 
+
+                  The portal also provides access to information on courses and certifications from leading providers, helping professionals stay informed about the latest trends and advancements in these rapidly evolving fields.
                   </p>
                 </Column>
               </Grid>
@@ -108,7 +106,7 @@ export default function LandingPage() {
             sm={4}
             className="landing-page__title"
           >
-            Carbon is Open
+            Data Security and Integrity
           </Column>
           <Column
             lg={{ start: 9, span: 3 }}
@@ -116,7 +114,7 @@ export default function LandingPage() {
             sm={4}
             className="landing-page__title"
           >
-            Carbon is Modular
+            Scalability and Performance
           </Column>
           <Column
             lg={{ start: 13, span: 3 }}
@@ -124,7 +122,7 @@ export default function LandingPage() {
             sm={4}
             className="landing-page__title"
           >
-            Carbon is Consistent
+            Cloud-Native and Hybrid Flexibility
           </Column>
         </Grid>
       </Column>

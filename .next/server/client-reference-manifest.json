@@ -48,6 +48,14 @@
         "async": false
       }
     },
+    "(app-client)/./src/app/page.js": {
+      "*": {
+        "id": "(sc_client)/./src/app/page.js",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./src/app/articles/page.js": {
       "*": {
         "id": "(sc_client)/./src/app/articles/page.js",
@@ -155,6 +163,14 @@
       ],
       "async": false
     },
+    "/Users/abhisheksatyam/Documents/blog-engine/carbon-tutorial-nextjs/src/app/page.js": {
+      "id": "(app-client)/./src/app/page.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
     "/Users/abhisheksatyam/Documents/blog-engine/carbon-tutorial-nextjs/src/app/articles/page.js": {
       "id": "(app-client)/./src/app/articles/page.js",
       "name": "*",
@@ -168,6 +184,7 @@
     "/Users/abhisheksatyam/Documents/blog-engine/carbon-tutorial-nextjs/src/app/layout": [
       "static/css/app/layout.css"
     ],
+    "/Users/abhisheksatyam/Documents/blog-engine/carbon-tutorial-nextjs/src/app/page": [],
     "/Users/abhisheksatyam/Documents/blog-engine/carbon-tutorial-nextjs/src/app/articles/page": [
       "static/css/app/articles/page.css"
     ]
