@@ -1,0 +1,242 @@
+/* Hero Section */
+.hero-image {
+  position: relative;
+  text-align: left; /* Align content to the left */
+  margin-bottom: 2rem;
+  height: 400px; /* Set a fixed height for hero image */
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the container */
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%; /* Vertically center the title and subtitle */
+  left: 20px; /* Align text from the left */
+  transform: translateY(-50%); /* Correct for exact vertical centering */
+  color: black; /* Set text color to black */
+  font-size: 3rem; /* Increased font size */
+  font-family: 'IBM Plex Sans', sans-serif; /* Carbon font */
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  z-index: 2; /* Ensure the title is above the image */
+}
+
+.hero-text span {
+  font-size: 1.5rem; /* Subtitle size */
+  color: black; /* Set subtitle color to black */
+  display: block; /* Ensures the subtitle is on a new line */
+  margin-top: 0.5rem; /* Add some space between title and subtitle */
+}
+
+.breadcrumb {
+  position: absolute;
+  top: 10px; /* Align breadcrumb to the top of the container */
+  left: 20px; /* Align breadcrumb from the left */
+  z-index: 2; /* Ensure breadcrumb is above the image */
+  font-family: 'IBM Plex Sans', sans-serif; /* Carbon font */
+}
+
+.breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.breadcrumb a:hover {
+  color: #0f62fe; /* Carbon default blue on hover */
+}
+
+.breadcrumb > span {
+  color: #fff;
+}
+
+/* Fade-In Animation on page load */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Blog Tile Styles */
+.blog-tiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 Tiles per row */
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blog-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px) scale(1.05); /* Elevate and scale */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1); /* Zoom effect on image hover */
+    }
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+
+  p {
+    flex-grow: 1;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .read-more-btn {
+    align-self: flex-end;
+    padding: 0.3rem 0.8rem; /* Smaller padding */
+    font-size: 0.9rem; /* Smaller font size */
+    background-color: #000;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background-color: #0f62fe; /* Carbon default blue */
+      color: #fff;
+      transform: scale(1.1); /* Scale effect */
+    }
+
+    svg {
+      margin-left: 8px;
+    }
+  }
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+/* Pagination Styles */
+.bx--pagination {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.bx--pagination button {
+  transition: background-color 0.3s ease;
+}
+
+.bx--pagination button:hover {
+  background-color: #0f62fe; /* Carbon blue on hover */
+  color: #fff;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #f4f4f4;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  border-top: 1px solid #ddd;
+}
+
+.footer p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.footer a {
+  color: #0f62fe; /* Carbon blue */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .blog-tiles {
+    grid-template-columns: 1fr 1fr; /* 2 Columns on medium screens */
+  }
+
+  .sidebar {
+    margin-top: 2rem;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+  }
+
+  .blog-tile {
+    padding: 1rem;
+  }
+
+  .read-more-btn {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-tiles {
+    grid-template-columns: 1fr; /* 1 Column on smaller screens */
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+  }
+}
